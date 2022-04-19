@@ -20,6 +20,8 @@ jobs:
       - run: |
           cd sample-packages/npm
           npm i
-      - run: npm publish
+      - run: |
+          cd sample-packages/npm
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
