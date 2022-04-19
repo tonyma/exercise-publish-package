@@ -17,7 +17,7 @@ jobs:
           node-version: 16
       - run: |
           cd sample-packages/npm/
-          npm ci
+          npm i
       - run: |
           cd sample-packages/npm/
           npm test
@@ -37,7 +37,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: |
           cd sample-packages/npm/
-          npm ci
+          npm i
       - run: |
           cd sample-packages/npm/
           npm publish
